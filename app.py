@@ -6,7 +6,7 @@ from PIL import Image
 
 openai.api_key =  os.getenv("APIKEY")
 
-query = st.text_input("Input Query")
+query = st.text_input("Input Chat Query")
 
 if st.button("Generate Diagram"):
     response = openai.Image.create(
