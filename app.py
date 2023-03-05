@@ -2,6 +2,7 @@ import streamlit as st
 import os
 import urllib.request
 import openai
+from PIL import Image
 
 openai.api_key =  os.getenv("APIKEY")
 
