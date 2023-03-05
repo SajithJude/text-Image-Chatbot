@@ -14,6 +14,6 @@ if st.button("Generate Diagram"):
     size="1024x1024"
     )
     image_url = response['data'][0]['url']
-    urllib.request.urlretrieve(img_url, 'img.png')
+    urllib.request.urlretrieve(image_url, 'img.png')
     img = Image.open("img.png")
     st.image(img)
